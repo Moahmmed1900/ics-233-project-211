@@ -1,2 +1,1 @@
-# ics-233-project-211
-ICS 233: Assembly Course Project
+# ICS 233: Assembly. \n# Project: CPU Design
