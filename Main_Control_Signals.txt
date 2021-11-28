@@ -1,0 +1,9 @@
+Main Control 
+1- MEM Read
+2- MEM Write
+3- ALU_Src
+4- RegDst
+5- RegWrite
+6- WB_Data
+7- Jump?
+8- Register
