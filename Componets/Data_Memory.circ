@@ -74,8 +74,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="70" y="83">Address</text>
       <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="69" y="103">Data_IN</text>
       <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="115" y="93">Data_OUT</text>
-      <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="61" y="125">LD</text>
-      <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="81" y="125">ST</text>
+      <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="80" y="125">LD</text>
+      <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="61" y="125">ST</text>
       <text font-family="SansSerif" font-size="8" font-weight="bold" text-anchor="middle" x="120" y="125">CLK</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="67">Data Memory</text>
       <circ-port height="8" pin="160,270" width="8" x="46" y="76"/>
@@ -94,12 +94,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(160,270)" to="(210,270)"/>
     <wire from="(240,310)" to="(240,340)"/>
     <wire from="(180,290)" to="(180,350)"/>
-    <comp lib="0" loc="(300,340)" name="Pin">
+    <comp lib="4" loc="(350,270)" name="RAM">
+      <a name="addrWidth" val="20"/>
+      <a name="dataWidth" val="32"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(280,370)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(160,270)" name="Pin">
       <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(170,350)" name="Pin">
+      <a name="width" val="32"/>
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(400,270)" name="Pin">
@@ -109,20 +118,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(170,350)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(240,340)" name="Pin">
+    <comp lib="0" loc="(300,340)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="4" loc="(350,270)" name="RAM">
-      <a name="addrWidth" val="20"/>
-      <a name="dataWidth" val="32"/>
-      <a name="bus" val="separate"/>
-    </comp>
-    <comp lib="0" loc="(280,370)" name="Pin">
+    <comp lib="0" loc="(240,340)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
     </comp>
